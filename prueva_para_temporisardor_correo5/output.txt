@@ -1,0 +1,1 @@
+Correcto: se cre¢ correctamente la tarea programada "EnviarCorreoTask".

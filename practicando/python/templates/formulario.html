@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <form method="post">
+            <p>Su nombre: <input type="text" name="nombre" /></p>
+            <p>Su edad: <input type="text" name="edad" /></p>
+            <p><input type="submit" /></p>
+        </form>
+    </div>
+</body>
+</html>

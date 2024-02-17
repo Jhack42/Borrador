@@ -1,0 +1,197 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos del título en el encabezado */
+header h1 {
+    margin: 0;
+}
+
+/* Estilos del menú de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Estilos del contenido principal */
+main {
+    padding: 20px;
+}
+
+/* Estilos para secciones */
+section {
+    margin-bottom: 40px;
+}
+
+/* Estilos específicos para proyectos */
+.proyecto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Establecer imagen de fondo para el encabezado */
+header {
+    background-image: url('imajenes/fondo encabezado2.jpg');
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente el encabezado */
+    /* Otros estilos para el encabezado aquí */
+}
+
+
+/* Estilos para imágenes */
+img {
+    float: left;
+    margin-right: 20px;
+}
+
+/* Estilos para la disposición de elementos */
+.contenido {
+    overflow: hidden;
+}
+
+/* Estilos para la imagen de perfil */
+.foto-perfil {
+    width: 90px; /* Ancho de la imagen */
+    /* Otros estilos para la imagen aquí */
+}
+
+/* ------------------------------chat bot---------------------------------- */
+
+/* Estilos generales */
+.chat-bot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none; /* El chat estará oculto inicialmente */
+    z-index: 1000; /* Asegura que esté sobre otros elementos */
+}
+
+.chat-header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-conversacion {
+    height: 300px;
+    overflow-y: scroll; /* Agrega barra de desplazamiento */
+    padding: 10px;
+}
+
+.chat-input {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+/* Estilos para los mensajes */
+.mensaje-usuario {
+    text-align: right;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.mensaje-bot {
+    text-align: left;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Estilo para la sección del chat */
+.chat-container {
+    border: 2px solid skyblue; /* Borde de color celeste */
+    padding: 10px; /* Espaciado interno para que no quede pegado al borde */
+}
+
+/* Estilo para el botón de chat */
+#chatbot-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 999; /* Asegura que esté encima del contenido */
+}
+
+/* Estilo para la ventana del chat */
+.chat-container {
+    border: 2px solid skyblue;
+    padding: 10px;
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 998; /* Por debajo del botón de chat */
+}
+
+/* Estilo para el botón de chat */
+#chatbot-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 999; /* Asegura que esté encima del contenido */
+}
+
+/* Estilo para la ventana del chat */
+.chat-container {
+    border: 2px solid skyblue;
+    padding: 10px;
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 998; /* Por debajo del botón de chat */
+}
+
+/* Estilo para los mensajes del chat */
+.chat-box {
+    /* ... Otros estilos ... */
+    display: flex;
+    flex-direction: column-reverse; /* Muestra los mensajes en orden descendente */
+    gap: 5px; /* Espacio entre los mensajes */
+}
+
+.mensaje-usuario,
+.mensaje-bot {
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+/* Estilos específicos para el mensaje del usuario */
+.mensaje-usuario {
+    align-self: flex-end; /* Alinea el mensaje del usuario a la derecha */
+    background-color: lightblue; /* Color de fondo */
+}
+
+/* Estilos específicos para el mensaje del bot */
+.mensaje-bot {
+    align-self: flex-start; /* Alinea el mensaje del bot a la izquierda */
+    background-color: lightgreen; /* Color de fondo */
+}

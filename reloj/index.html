@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj Sincronizado con Internet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Reloj Sincronizado con Internet</h1>
+    <p id="current-time"></p>
+    <script>
+        function updateClock() {
+            fetch('/')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('current-time').textContent = data.trim(); // Asegúrate de eliminar los espacios en blanco alrededor de la hora
+            })
+            .catch(error => console.error('Error al obtener la hora:', error));
+        }
+        setInterval(updateClock, 60000); // Actualizar cada 60 segundos
+        updateClock(); // Actualizar al cargar la página
+    </script>
+</body>
+</html>
