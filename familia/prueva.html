@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+            <html>
+            <head>
+                <title>Bienvenido al ciclo 2022-1</title>
+                <meta charset="UTF-8">
+                <style>
+                    /* Estilos CSS para el diseño del mensaje */
+                    .container {
+                        font-family: Arial, sans-serif;
+                        background-color: #ffffff;
+                        padding: 20px;
+                        width: 100%;
+                        max-width: 600px;
+                        margin: 20px auto;
+                        border: 2px solid maroon;
+                        border-radius: 10px;
+                        text-align: center;
+                    }
+                    /*------------encabezado-------------*/
+                    .encabezado {
+                        background-color: rgb(230, 217, 170);
+                        padding: 10px;
+                        display: flex;
+                        align-items: center; /* Alinea verticalmente el texto y la imagen */
+                        font-weight: bold;
+                        font-size: 24px;
+                        /*margin-bottom: 20px;*/
+                        border-radius: 10px;
+                        text-align: left; /* Alineación del texto a la izquierda dentro del encabezado */
+                    }
+            
+                    .texto-uni-orce {
+                        margin-left: 19px;
+                        font-size: 48px;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        margin-right: 20px;
+                        color: #711610
+                    }
+                    /* Estilos para la imagen dentro del encabezado */
+                    .img-container {
+                        margin-top: auto;
+                        /*float: left; /* Alineación a la derecha */
+                        margin-bottom: auto;
+                        margin-left: auto;
+                        width: 24%; /* Ancho de la imagen al 100% del contenedor en pantallas pequeñas */
+                        /*width: 120px;  Ancho de la imagen */
+                        margin-right: 19px; /* Espacio entre la imagen y el contenido adyacente */
+                    }
+            
+
+                    table {
+                        border-collapse: collapse;
+                        width: 100%;
+                        border-radius: 10px; /* Añade bordes redondeados a toda la tabla */
+                        border-color: aqua;
+                        overflow: hidden; /* Asegura que los bordes redondeados se apliquen correctamente */
+                    }
+
+                    th, td {
+                        border: 1px solid maroon;
+                        text-align: left;
+                        padding: 8px;
+                    }
+
+                    th {
+                        background-color: rgb(230, 217, 170);
+                    }
+
+                    tr:nth-child(even) {
+                        background-color: #ffffff;
+                    }
+                    
+                    .text_direccion {
+                        margin-top: auto;
+                        margin-bottom: auto;
+                        margin-left: auto;
+                        text-align: right;
+                    }
+                    /*------------content-------------*/
+                    .content {
+                        background-color: white;
+                        padding: 20px;
+                        color: #711610
+                    }
+                    .contenedor_invisible {
+                        margin-top: auto;
+                        margin-bottom: auto;
+                        margin-left: auto;
+                        display: flex;
+                        justify-content: flex-end; /* Alinea el contenido a la derecha */
+                    }
+                    .pie_de_página {
+                        background-color: rgb(230, 217, 170);
+                        border-radius: 10px;
+                        padding: 10px; /* Añade un padding de 5px al pie de página */
+                    }
+                </style>
+            </head>
+            <body>
+                <div class="container">
+                    <!-- Encabezado -->
+                    <div class="encabezado">
+                        <div class="texto-uni-orce" style="display: inline-block;">
+                            UNI<br>ORCE
+                        </div>
+
+                        <img class="img-container" src="https://i.postimg.cc/pL366K17/imagen1.png" alt="imagen1.png">
+
+                    </div>
+                    <!-- Contenido -->
+                    <div class="content">
+                        <h2>Bienvenido {$nombre}</h2>
+                        <p>al ciclo 2022-1</p>
+                        <p>{$nombre_curso} - {$seccion}</p>
+                        <h3>Listado de estudiantes</h3>
+                        <p>{$estudiantes}</p>
+                        <p>Donde cargar su material</p>
+                        <h3>Listado de sesiones</h3>
+                        <table border="1">
+                            <tr>
+                                <th>Sección</th>
+                                <th>Fecha de sesión</th>
+                                <th>Hora de sesión</th>
+                            </tr>
+                            <tr>
+                                <td>{$seccion}</td>
+                                <td>{$fecha_sesion}</td>
+                                <td>{$hora_sesion}</td>
+                            </tr>
+                        </table>
+                        <h3>Listado de evaluaciones</h3>
+                        <table border="1">
+                            <tr>
+                                <th>Nombre de evaluación</th>
+                                <th>Fecha de evaluación</th>
+                                <th>Hora de evaluación</th>
+                            </tr>
+                            <tr>
+                                <td>{$nombre_evaluacion}</td>
+                                <td>{$fecha_evaluacion}</td>
+                                <td>{$hora_evaluacion}</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- Pie de página -->
+                    <div class="pie_de_página">
+                        <!-- Dirección -->
+                        <div class="contenedor_invisible">
+                            <div class="text_direccion" style="text-align: right; margin-top: auto; margin-bottom: auto; margin-left: auto;">
+                                <p style="text-align: left; font-size: 12px;">Contacto</p>
+                                <p style="text-align: left; font-size: 12px;">Av. Túpac Amaru 210 - Rímac.</p>
+                                <p style="text-align: left; font-size: 12px;">Apartado 1301. Lima - Perú</p>
+                                <p style="text-align: left; font-size: 12px;">Telf.: 4811070</p>
+                            </div>
+                        </div>
+                        <!-- Texto -->
+                        <div class="text" style="display: block; text-align: center;">
+                            <p style="font-size: 12px;">2022 © Derechos Reservados</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Texto -->
+    
+                </div>
+            </body>
+            </html>"
