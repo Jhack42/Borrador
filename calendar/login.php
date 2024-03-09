@@ -37,11 +37,6 @@
 </body>
 </html>
 
-
-
-
-
-
 <?php
 session_start();
 include 'db_connection.php';
@@ -53,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "SELECT * FROM usuarios WHERE correo='$correo' AND contraseña='$contraseña'";
     $result = $conn->query($sql);
 
-    if ($result->num_rows == 1) {
+    if ($result->num_rows == 1) { //== 1: Esta parte del código compara el valor de la propiedad num_rows con el valor 1. Si el número de filas devueltas por la consulta es igual a 1, el resultado de la comparación será verdadero (true). Esto significa que la consulta ha encontrado exactamente una fila que cumple con los criterios de búsqueda especificados en la consulta SQL.
         $row = $result->fetch_assoc();
 
         if ($row['es_admin'] == 1) { // Verifica si el usuario es un administrador
@@ -76,4 +71,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 $conn->close();
 ?>
+
 

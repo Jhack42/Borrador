@@ -25,9 +25,9 @@
             }
 
             // Cargar el contenido inicialmente y luego cada segundo
-            cargarContenidoPagina("uni17.php");
+            cargarContenidoPagina("uni18 copy.php");
             setInterval(function() {
-                cargarContenidoPagina("uni17.php");
+                cargarContenidoPagina("uni18 copy.php");
             }, 1000); // 1000 milisegundos = 1 segundo
         });
     </script>

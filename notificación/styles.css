@@ -1,0 +1,27 @@
+.notification {
+    background-color: #ffcc00; /* Color de fondo amarillo */
+    color: black; /* Color del texto */
+    padding: 16px;
+    border-radius: 5px; /* Radio de borde redondeado */
+    border: 2px solid #ff0000; /* Borde sólido de 2px de ancho con color rojo */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    animation: slideIn 0.5s forwards, slideOut 0.5s forwards 4s;
+}
+
+@keyframes slideIn {
+    from {
+        bottom: 0;
+    }
+    to {
+        bottom: 30px;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        bottom: 30px;
+    }
+    to {
+        bottom: 0;
+    }
+}
